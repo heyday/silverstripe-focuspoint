@@ -13,7 +13,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"SilverStripeFocusPoint": "code/"
+			"SilverStripeFocusPoint\\": "code/"
 		}
 	}
 }
