@@ -1,9 +1,20 @@
 <?php
 
+namespace SilverStripeFocusPoint;
+
+use SilverStripe\Forms\FieldGroup;
+use SilverStripe\View\Requirements;
+use SilverStripe\Assets\Image;
+use SilverStripe\Forms\LiteralField;
+use SilverStripe\Forms\TextField;
+use SilverStripe\Control\Director;
+
+
 /**
- * FocusPointField class.
+ * Class FocusPointField
  * Facilitates the selection of a focus point on an image.
  *
+ * @package SilverStripeFocusPoint
  * @extends FieldGroup
  */
 class FocusPointField extends FieldGroup
@@ -35,8 +46,8 @@ class FocusPointField extends FieldGroup
     public function __construct(Image $image)
     {
         // Load necessary scripts and styles
-        Requirements::javascript(FRAMEWORK_DIR.'/thirdparty/jquery/jquery.js');
-        Requirements::javascript(FRAMEWORK_DIR.'/thirdparty/jquery-entwine/dist/jquery.entwine-dist.js');
+        Requirements::javascript('silverstripe/admin: thirdparty/jquery/jquery.js');
+        Requirements::javascript('silverstripe/admin: /thirdparty/jquery-entwine/dist/jquery.entwine-dist.js');
         Requirements::javascript(FOCUSPOINT_DIR.'/javascript/FocusPointField.js');
         Requirements::css(FOCUSPOINT_DIR.'/css/FocusPointField.css');
 

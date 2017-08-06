@@ -1,4 +1,8 @@
 <?php
+
+namespace SilverStripeFocusPoint;
+
+
 if(class_exists('Imagick')) {
     class FPImagickBackend extends ImagickBackend {
         /**

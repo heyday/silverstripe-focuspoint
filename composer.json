@@ -9,6 +9,11 @@
 		"homepage": "http://jonathonmenz.com"
 	}],
 	"require": {
-		"silverstripe/framework": "^3.6"
+		"silverstripe/framework": "~4.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"SilverStripeFocusPoint": "code/"
+		}
 	}
 }

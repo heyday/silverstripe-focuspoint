@@ -1,5 +1,11 @@
 <?php
 
+namespace SilverStripeFocusPoint;
+
+use SilverStripe\Assets\Image;
+
+
+
 /**
  * Override default cropping methods with FocusPoint versions
  *
@@ -28,26 +34,27 @@ class FPImage extends Image
     }
 }
 
+
 /**
  * Ensure manipulated images get their methods overidden too, for method chaining
  *
  * @extends Image_cached
- */
-class FPImage_Cached extends Image_Cached {
-
-    public function Fill($width, $height) {
-        return $this->FocusFill($width, $height);
-    }
-
-    public function FillMax($width, $height) {
-        return $this->FocusFillMax($width, $height);
-    }
-
-    public function CropWidth($width) {
-        return $this->FocusCropWidth($width);
-    }
-
-    public function CropHeight($height) {
-        return $this->FocusCropHeight($height);
-    }
-}
+// */
+//class FPImage_Cached extends Image_Cached {
+//
+//    public function Fill($width, $height) {
+//        return $this->FocusFill($width, $height);
+//    }
+//
+//    public function FillMax($width, $height) {
+//        return $this->FocusFillMax($width, $height);
+//    }
+//
+//    public function CropWidth($width) {
+//        return $this->FocusCropWidth($width);
+//    }
+//
+//    public function CropHeight($height) {
+//        return $this->FocusCropHeight($height);
+//    }
+//}

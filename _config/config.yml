@@ -1,13 +1,12 @@
 ---
 Name: focuspoint
-After: 'framework/*','cms/*'
 ---
-Image:
+SilverStripe\Assets\Image:
   extensions:
-    - FocusPointImage
+    - SilverStripeFocusPoint\FocusPointImage
 
-# FocusPointField:
-#   debug: true
+#SilverStripeFocusPoint\FocusPointField:
+#  debug: true
 #   max_width: 500
 #   max_height: 300
 

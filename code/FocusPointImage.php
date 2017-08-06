@@ -1,10 +1,23 @@
 <?php
 
+namespace SilverStripeFocusPoint;
+
+
+use SilverStripe\Core\Extension;
+use SilverStripe\Forms\FieldList;
+use SilverStripe\Core\Config\Config;
+use SilverStripe\ORM\DataExtension;
+use SilverStripe\View\Requirements;
+use SilverStripe\Assets\Image_Backend;
+
+
 /**
+ * Class FocusPointImage
  * FocusPoint Image extension.
  * Extends Image to allow automatic cropping from a selected focus point.
  *
- * @extends DataExtension
+ * @package SilverStripeFocusPoint
+ * @extends Extension
  */
 class FocusPointImage extends DataExtension
 {
