@@ -1,5 +1,5 @@
 {
-	"name": "jonom/focuspoint",
+	"name": "heyday/silverstripe-focuspoint",
 	"description": "Smarter automatic image cropping for SilverStripe",
 	"type": "silverstripe-module",
 	"keywords": ["silverstripe", "crop", "cropping", "focus", "focuspoint", "image"],
